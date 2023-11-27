@@ -1,94 +1,229 @@
-body{
-    background-color:hsl(0, 0%, 81%) ;
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    background-color: hsl(0, 0%, 81%);
     font-size: 13px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     color: hsl(0, 0%, 100%);
-}
+  }
 
+  footer {
+    font-size: 11px;
+    text-align: center;
+  }
+  footer a {
+    color: hsl(228, 45%, 44%);
+  }
 
-footer{ font-size: 11px; text-align: center; }
-footer a { color: hsl(228, 45%, 44%); }
-
-
-main{
+  main {
     width: 90%;
-    margin: 40px auto;
-    
+    margin: 20px auto;
+
     display: grid;
-    row-gap: 20px;
-}
+    gap: 10px;
+  }
 
-.Container{
-    padding:30px;
+  .Container {
+    padding: 10px 15px;
     border-radius: 9px;
-}
+    width: 200px;
+    margin: 2px auto;
+  }
 
-
-.containerImage{
+  .containerImage {
     margin-top: 3px;
-}
+  }
 
-img{
+  img {
     border: 1px solid white;
     width: 21px;
     border-radius: 100px;
-}
+  }
 
-.top{
+  .top {
     display: flex;
     color: hsl(0, 0%, 100%);
-}
+  }
 
-.profileInfo{
+  .profileInfo {
     margin-left: 10px;
     margin-top: 3px;
-}
+  }
 
-.profileInfo p{
+  .profileInfo p {
     margin-top: 10px;
     margin: 0px;
     font-size: 0.7em;
-    
+  }
 
-}
-
-span{
-    opacity:50%;
+  span {
+    opacity: 50%;
     font-size: 0.8em;
-}
+  }
 
-.Daniel{
+  .Daniel {
     background-color: hsl(263, 55%, 52%);
-}
+  }
 
-.Jonathan{
+  .Jonathan {
     background-color: hsl(217, 19%, 35%);
-}
+  }
 
-
-.Kira, .Jeanette {
-    background-color:hsl(0, 0%, 100%);
+  .Kira,
+  .Jeanette {
+    background-color: hsl(0, 0%, 100%);
     color: hsl(217, 19%, 35%);
-}
+  }
 
-.Kira .top, .Jeanette .top{
+  .Kira .top,
+  .Jeanette .top {
     color: hsl(217, 19%, 35%);
-} 
+  }
 
-.Patrick{
+  .Patrick {
+    background-color: hsl(219, 29%, 14%);
+  }
 
-    background-color:hsl(219, 29%, 14%);
-
-}
-
-h2{
+  h2 {
     font-weight: 600;
-    font-size: 1.55em;
-    
+    font-size: small;
+    text-align: left;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: xx-small;
+    text-align: left;
+  }
 }
 
-p{
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: hsl(0, 0%, 81%);
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: hsl(0, 0%, 100%);
+  }
+
+  main {
+    width: 58%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+  }
+
+  .Container {
+    padding: 10px 15px;
+    border-radius: 9px;
+    margin: 2px auto;
+  }
+
+  .containerImage {
+    margin-top: 3px;
+  }
+
+  img {
+    border: 1px solid white;
+    width: 21px;
+    border-radius: 100px;
+  }
+
+  .top {
+    display: flex;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .profileInfo {
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+
+  .profileInfo p {
+    margin-top: 10px;
+    margin: 0px;
+    font-size: 0.7em;
+  }
+
+  span {
+    opacity: 50%;
+    font-size: 0.8em;
+  }
+
+  .Daniel {
+    background-color: hsl(263, 55%, 52%);
+  }
+
+  .Jonathan {
+    background-color: hsl(217, 19%, 35%);
+  }
+
+  .Kira,
+  .Jeanette {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+  }
+
+  .Kira .top,
+  .Jeanette .top {
+    color: hsl(217, 19%, 35%);
+  }
+
+  .Patrick {
+    background-color: hsl(219, 29%, 14%);
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: small;
+    text-align: left;
+  }
+
+  p {
     font-weight: 500;
-    font-size: 1.0em;
-    
+    font-size: xx-small;
+    text-align: left;
+  }
+
+  .Daniel {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .Jonathan {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .Jeanette {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .Patrick {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+
+  .Kira {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }

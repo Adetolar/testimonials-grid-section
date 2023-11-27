@@ -114,10 +114,11 @@ footer a {
     font-size: 13px;
     font-family: "Barlow Semi Condensed", sans-serif;
     color: hsl(0, 0%, 100%);
+    margin: 150px auto;
   }
 
   main {
-    width: 58%;
+    width: 51%;
     margin: 20px auto;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -194,6 +195,7 @@ footer a {
     font-weight: 500;
     font-size: xx-small;
     text-align: left;
+    opacity: 70%;
   }
 
   .Daniel {
